@@ -1,0 +1,212 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I assist you with your stock inquiries today?",
+        "Hi there! What stock information are you looking for?",
+        "Hey! How can I help you with stocks today?",
+        "Hey! How are you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Talk to you later",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "Bye! Feel free to reach out if you have more stock questions.",
+        "See you later! Happy investing!"
+      ]
+    },
+    {
+      "tag": "positive_how_are_you",
+      "patterns": [
+        "I'm good",
+        "I'm doing good",
+        "I'm great",
+        "I'm doing great",
+        "I'm doing amazing"
+      ],
+      "responses": [
+        "That's great! How can I help you with your stock financial needs?",
+        "That's great! How can I assist you with your stock inquiries today?",
+        "That's great! How can I help you with stocks today?"
+      ]
+    },
+    {
+      "tag": "positive_how_are_you_with_question",
+      "patterns": [
+        "I'm good, how are you?",
+        "I'm doing good, how are you?",
+        "I'm great, how are you?",
+        "I'm doing great, how are you?",
+        "I'm doing amazing, how are you?"
+      ],
+      "responses": [
+        "I'm doing good, thanks for asking! How can I help you with your stock financial needs?",
+        "I'm doing good, thanks for asking! How can I assist you with your stock inquiries today?",
+        "I'm doing good, thanks for asking! How can I help you with stocks today?"
+      ]
+    },
+    {
+      "tag": "negative_how_are_you",
+      "patterns": [
+        "I'm bad",
+        "I'm doing bad",
+        "I'm doing alright",
+        "It could be better",
+        "It could be worse",
+        "It's ok",
+        "I'm doing ok",
+        "I'm alright",
+        "I'm doing alright",
+        "I'm doing horrible"
+      ],
+      "responses": [
+        "Hopefully your day gets better. How can I help you with your stock financial needs?",
+        "Hopefully your day gets better. How can I assist you with your stock inquiries today?",
+        "Hopefully your day gets better. How can I help you with stocks today?"
+      ]
+    },
+    {
+      "tag": "negative_how_are_you_with_question",
+      "patterns": [
+        "I'm bad, how are you?",
+        "I'm doing bad, how are you?",
+        "I'm doing alright, how are you?",
+        "It could be better, how are you?",
+        "It could be worse, how are you?",
+        "It's ok, how are you?",
+        "I'm doing ok, how are you?",
+        "I'm alright, how are you?",
+        "I'm doing alright, how are you?",
+        "I'm doing horrible, how are you?"
+      ],
+      "responses": [
+        "I'm doing good, thanks for asking. Hopefully your day gets better. How can I help you with your stock financial needs?",
+        "I'm doing good, thanks for asking. Hopefully your day gets better. How can I assist you with your stock inquiries today?",
+        "I'm doing good, thanks for asking. Hopefully your day gets better. How can I help you with stocks today?"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "I appreciate it",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "Anytime! If you have more questions, just ask."
+      ]
+    },
+    {
+      "tag": "get_stock_price",
+      "patterns": [
+        "What's the price of {stock}?",
+        "How much is {stock} trading for?",
+        "Current price of {stock}",
+        "Stock price for {stock}",
+        "Tell me the price of {stock}"
+      ],
+      "responses": [
+        "The current price of {stock} is $X.XX.",
+        "As of now, {stock} is trading at $X.XX."
+      ]
+    },
+    {
+      "tag": "plot_chart",
+      "patterns": [
+        "I want you to plot a stock price!",
+        "Please plot a chart",
+        "Plot a stock",
+        "Plot a stock price",
+        "Show me a stock price chart",
+        "Candlestick chart",
+        "plot price"
+      ],
+      "responses": [
+        "Plotting chart"
+      ]
+    },
+    {
+      "tag": "add_to_portfolio",
+      "patterns": [
+        "Add {stock} to my portfolio",
+        "I want to add {stock} to my investments",
+        "Can you add {stock} to my portfolio?",
+        "Include {stock} in my portfolio",
+        "Add {stock} to my list of stocks"
+      ],
+      "responses": [
+        "{stock} has been added to your portfolio.",
+        "I've added {stock} to your portfolio.",
+        "{stock} is now included in your investment portfolio."
+      ]
+    },
+    {
+      "tag": "remove_from_portfolio",
+      "patterns": [
+        "Remove {stock} from my portfolio",
+        "I want to remove {stock} from my investments",
+        "Can you remove {stock} from my portfolio?",
+        "Delete {stock} from my portfolio",
+        "Take {stock} out of my portfolio"
+      ],
+      "responses": [
+        "{stock} has been removed from your portfolio.",
+        "I've removed {stock} from your portfolio.",
+        "{stock} is no longer in your investment portfolio."
+      ]
+    },
+    {
+      "tag": "show_portfolio",
+      "patterns": [
+        "Show my portfolio",
+        "What stocks are in my portfolio?",
+        "Show me my investments",
+        "What is in my portfolio?",
+        "Display my portfolio"
+      ],
+      "responses": [
+        "Here is your current portfolio: [list of stocks]",
+        "These are the stocks in your portfolio: [list of stocks]",
+        "Your portfolio includes the following stocks: [list of stocks]"
+      ]
+    },
+    
+    
+   
+    {
+      "tag": "portfolio_gains",
+      "patterns": [
+        "How much has my portfolio gained?",
+        "What are my portfolio gains?",
+        "Show me the gains for my portfolio",
+        "Calculate the gains for my portfolio",
+        "Tell me the gains of my portfolio"
+      ],
+      "responses": [
+        "Your portfolio has gained {gain} dollars.",
+        "The total gains for your portfolio are {gain} dollars.",
+        "You have made {gain} dollars in gains from your portfolio."
+      ]
+    }
+  ]
+}
